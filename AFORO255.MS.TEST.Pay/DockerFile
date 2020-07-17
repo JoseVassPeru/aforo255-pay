@@ -1,0 +1,5 @@
+FROM openjdk:13
+VOLUME /temp
+EXPOSE 8040
+ADD ./build/libs/AFORO255.MS.TEST.Pay-0.0.1-SNAPSHOT.jar  pay-server.jar
+ENTRYPOINT ["java", "-jar", "/pay-server.jar"]
