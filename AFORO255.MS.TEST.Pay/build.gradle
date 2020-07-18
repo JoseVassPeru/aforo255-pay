@@ -16,6 +16,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.kafka:spring-kafka'
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-config-client
+	compile group: 'org.springframework.cloud', name: 'spring-cloud-config-client', version: '2.2.0.RELEASE'
+
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	// https://mvnrepository.com/artifact/mysql/mysql-connector-java
 	compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.20'
